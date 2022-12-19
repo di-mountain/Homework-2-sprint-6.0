@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -29,4 +30,16 @@ public class Main {
         }
     }
 
+    public static void task3() {
+        System.out.println("Задача 3");
+        int population = 12_000_000;
+        int birthAmountPer1000 = 17;
+        int deathAmountPer1000 = 8;
+        int year = 2022;
+        while (year <= 2032) {
+            System.out.println("Год " + year + ", численность населения составляет " + population + " человек");
+            population = population + population / 1000 * (birthAmountPer1000 - deathAmountPer1000);
+            year++;
+        }
+    }
 }
