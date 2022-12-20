@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -97,6 +98,17 @@ public class Main {
         int firstFriday = 3;
         for (; firstFriday <= 31; firstFriday += 7) {
             System.out.println("Сегодня пятница, " + firstFriday + " число. Необходимо подготовить отчет");
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int currentYear = 2022;
+        int startYear = currentYear - 200;
+        int finalYear = currentYear + 100;
+        for (int i = 0; i <= finalYear; i += 79) {
+            if (i >= startYear)
+                System.out.println("Комета пролетит (пролетела) в " + i + " году");
         }
     }
 }
