@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -89,5 +90,13 @@ public class Main {
             }
         }
         System.out.println("Итого: за " + (month - 1) + " месяцев (9 лет) накоплено " + total + " рублей");
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int firstFriday = 3;
+        for (; firstFriday < 31; firstFriday += 7) {
+            System.out.println("Сегодня пятница, " + firstFriday + " число. Необходимо подготовить отчет");
+        }
     }
 }
