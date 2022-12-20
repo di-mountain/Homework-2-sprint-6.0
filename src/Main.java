@@ -95,7 +95,7 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         int firstFriday = 3;
-        for (; firstFriday < 31; firstFriday += 7) {
+        for (; firstFriday <= 31; firstFriday += 7) {
             System.out.println("Сегодня пятница, " + firstFriday + " число. Необходимо подготовить отчет");
         }
     }
